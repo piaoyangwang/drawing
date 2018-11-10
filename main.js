@@ -5,8 +5,8 @@ var radius = 10;
 var dragging = false;
 context.fillStyle = 'black';
 context.strokeStyle = 'black';
-canvas.width = 800;
-canvas.height = 500;
+canvas.width = 500;
+canvas.height = 800;
 
 context.lineWidth = radius * 2;
 
@@ -16,7 +16,7 @@ var putPoint = function (e) {
         context.lineTo(e.pageX, e.pageY);
         context.stroke();
         context.beginPath();
-        context.arc(e.pageX, e.pageY, radius, 0, radius);
+        context.arc(e.pageX, e.pageY, radius, 0, Math.PI*2));
         context.fill();
         context.beginPath();
         context.moveTo(e.pageX, e.pageY);
