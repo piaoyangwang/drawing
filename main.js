@@ -5,8 +5,8 @@ var radius = 10;
 var dragging = false;
 context.fillStyle = 'black';
 context.strokeStyle = 'black';
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+canvas.width = 800;
+canvas.height = 500;
 
 context.lineWidth = radius * 2;
 
